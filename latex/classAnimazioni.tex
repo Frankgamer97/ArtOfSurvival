@@ -1,0 +1,157 @@
+\hypertarget{classAnimazioni}{}\section{Animazioni Class Reference}
+\label{classAnimazioni}\index{Animazioni@{Animazioni}}
+
+
+Gestisce le principali animazioni del gioco.  
+
+
+
+
+{\ttfamily \#include $<$Animazioni.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classAnimazioni_a4b82cad764f55cf17fbf4c368909f102}{}void \hyperlink{classAnimazioni_a4b82cad764f55cf17fbf4c368909f102}{next\+Level} ()\label{classAnimazioni_a4b82cad764f55cf17fbf4c368909f102}
+
+\begin{DoxyCompactList}\small\item\em gestisce l\textquotesingle{}animazione per l\textquotesingle{}avanzamento di livello \end{DoxyCompactList}\item 
+\hypertarget{classAnimazioni_aaa3627d10d1a0179e47ad4483714f460}{}void \hyperlink{classAnimazioni_aaa3627d10d1a0179e47ad4483714f460}{pre\+Level} ()\label{classAnimazioni_aaa3627d10d1a0179e47ad4483714f460}
+
+\begin{DoxyCompactList}\small\item\em gestisce l\textquotesingle{}animazione per la discesa di livello \end{DoxyCompactList}\item 
+void \hyperlink{classAnimazioni_ac4595a521eb207aa908cad427f511df2}{Level\+Map} (\hyperlink{structController}{Controller} $\ast$\hyperlink{structcontroller}{controller}, \hyperlink{classStanza}{Stanza} $\ast$first, int num\+\_\+stanze, int id\+\_\+stanza\+\_\+giocatore, int id\+Livello)
+\begin{DoxyCompactList}\small\item\em gestisce la visione della mini-\/mappa del livello corrente \end{DoxyCompactList}\item 
+void \hyperlink{classAnimazioni_a3076b0bd1364b4b89453848a14ea2dd7}{Persone\+Detail} (\hyperlink{classPersona}{Persona} $\ast$persone\mbox{[}$\,$\mbox{]}, int num, int id\+\_\+stanza, int id\+\_\+livello)
+\begin{DoxyCompactList}\small\item\em mostra a video tutti i dettagli dei personaggi (giocatore,aiutanti e nemici) presenti nella stanza corrente \end{DoxyCompactList}\item 
+\hypertarget{classAnimazioni_a9ea47ec16435e406d86a3ca30df02459}{}int \hyperlink{classAnimazioni_a9ea47ec16435e406d86a3ca30df02459}{gameover} ()\label{classAnimazioni_a9ea47ec16435e406d86a3ca30df02459}
+
+\begin{DoxyCompactList}\small\item\em gestisce l\textquotesingle{}animazione del gameover (fine del gioco) \end{DoxyCompactList}\item 
+\hypertarget{classAnimazioni_a625f92a5cefa6fbda9199a2a2be71015}{}void \hyperlink{classAnimazioni_a625f92a5cefa6fbda9199a2a2be71015}{win} ()\label{classAnimazioni_a625f92a5cefa6fbda9199a2a2be71015}
+
+\begin{DoxyCompactList}\small\item\em gestisce l\textquotesingle{}animazione della fine del gioco (causa superamento della quest) \end{DoxyCompactList}\item 
+void \hyperlink{classAnimazioni_ab96f159fbf43b336508b8ef35e1485f8}{mostra\+Zaino} (\hyperlink{classPersona}{Persona} $\ast$persona)
+\begin{DoxyCompactList}\small\item\em Gestisce l\textquotesingle{}animazione per la visita da parte dell\textquotesingle{}utente di tutti gli oggetti raccolti nel proprio zaino. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimazioni_a33d8edbeb81631a2dfccfa985238d5ca}{game\+Menu} (\hyperlink{structController}{Controller} $\ast$\hyperlink{structcontroller}{controller}, \hyperlink{classStanza}{Stanza} $\ast$s, int id\+\_\+stanza\+\_\+giocatore, int livello, int num\+\_\+stanze, \hyperlink{classPersona}{Persona} $\ast$persone\mbox{[}$\,$\mbox{]}, int num\+\_\+persone)
+\begin{DoxyCompactList}\small\item\em Gestisce ele principali animazioni implementate in questa classe (visita della minimappa,zaino e gestione dei controlli utente) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Gestisce le principali animazioni del gioco. 
+
+Questa classi gestisce tutte le principali animazioni del gioco, di cui\+:~\newline
+ -\/\+Gestione mappa del livello;~\newline
+ -\/\+Gestione comandi utente;~\newline
+ -\/\+Gestione lista di personaggi;~\newline
+ -\/\+Animazione per ascesa e discesa da ogni livello~\newline
+ -\/\+Animazione di visita dello zaino del giocatore~\newline
+ -\/\+Animazione di fine gioco (causa morte del giocatore e completamento della quest) 
+
+\subsection{Member Function Documentation}
+\hypertarget{classAnimazioni_a33d8edbeb81631a2dfccfa985238d5ca}{}\index{Animazioni@{Animazioni}!game\+Menu@{game\+Menu}}
+\index{game\+Menu@{game\+Menu}!Animazioni@{Animazioni}}
+\subsubsection[{game\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}Animazioni\+::game\+Menu (
+\begin{DoxyParamCaption}
+\item[{{\bf Controller} $\ast$}]{controller, }
+\item[{{\bf Stanza} $\ast$}]{s, }
+\item[{int}]{id\+\_\+stanza\+\_\+giocatore, }
+\item[{int}]{livello, }
+\item[{int}]{num\+\_\+stanze, }
+\item[{{\bf Persona} $\ast$}]{persone\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{num\+\_\+persone}
+\end{DoxyParamCaption}
+)}\label{classAnimazioni_a33d8edbeb81631a2dfccfa985238d5ca}
+
+
+Gestisce ele principali animazioni implementate in questa classe (visita della minimappa,zaino e gestione dei controlli utente) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & puntatore all\textquotesingle{}istanza di tipo \hyperlink{structController}{Controller} che rappresenta l\textquotesingle{}insieme di tutti i comandi utente \\
+\hline
+{\em s} & puntatore all\textquotesingle{}istanza di tipo \hyperlink{classStanza}{Stanza} per la visione della minimappa del livello \\
+\hline
+{\em id\+\_\+stanza\+\_\+giocatore} & id\+\_\+stanza della stanza in cui è situato il giocatore \\
+\hline
+{\em livello} & id\+Livello di tutte le stanze che si vogliono rappresentare per uno stesso \hyperlink{classLivello}{Livello} \\
+\hline
+{\em num\+\_\+stanze} & numero delle stanze che si vogliono rappresentare \\
+\hline
+{\em persone} & parametro che indica le persone di cui si vogliono descrivere \\
+\hline
+{\em num\+\_\+persone} & numero di persone che si vogliono descrivere \\
+\hline
+\end{DoxyParams}
+\hypertarget{classAnimazioni_ac4595a521eb207aa908cad427f511df2}{}\index{Animazioni@{Animazioni}!Level\+Map@{Level\+Map}}
+\index{Level\+Map@{Level\+Map}!Animazioni@{Animazioni}}
+\subsubsection[{Level\+Map}]{\setlength{\rightskip}{0pt plus 5cm}Animazioni\+::\+Level\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Controller} $\ast$}]{controller, }
+\item[{{\bf Stanza} $\ast$}]{first, }
+\item[{int}]{num\+\_\+stanze, }
+\item[{int}]{id\+\_\+stanza\+\_\+giocatore, }
+\item[{int}]{id\+Livello}
+\end{DoxyParamCaption}
+)}\label{classAnimazioni_ac4595a521eb207aa908cad427f511df2}
+
+
+gestisce la visione della mini-\/mappa del livello corrente 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & puntatore all\textquotesingle{}instanza di tipo \hyperlink{structController}{Controller} per l\textquotesingle{}insieme di tutti i comandi utente \\
+\hline
+{\em first} & puntatore all\textquotesingle{}istanza di tipo stanza della prima stanza del livello corrente \\
+\hline
+{\em num\+\_\+stanze} & numero delle stanze che si vogliono rappresentare \\
+\hline
+{\em id\+\_\+stanza\+\_\+giocatore} & id\+\_\+stanza della stanza in cui è situato il giocatore \\
+\hline
+{\em id\+Livello} & id\+Livello di tutte le stanze che si vogliono rappresentare per uno stesso \hyperlink{classLivello}{Livello} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classAnimazioni_ab96f159fbf43b336508b8ef35e1485f8}{}\index{Animazioni@{Animazioni}!mostra\+Zaino@{mostra\+Zaino}}
+\index{mostra\+Zaino@{mostra\+Zaino}!Animazioni@{Animazioni}}
+\subsubsection[{mostra\+Zaino}]{\setlength{\rightskip}{0pt plus 5cm}Animazioni\+::mostra\+Zaino (
+\begin{DoxyParamCaption}
+\item[{{\bf Persona} $\ast$}]{persona}
+\end{DoxyParamCaption}
+)}\label{classAnimazioni_ab96f159fbf43b336508b8ef35e1485f8}
+
+
+Gestisce l\textquotesingle{}animazione per la visita da parte dell\textquotesingle{}utente di tutti gli oggetti raccolti nel proprio zaino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em persona} & parametro che indica la persona di cui si vuole mostra lo zaino \\
+\hline
+\end{DoxyParams}
+\hypertarget{classAnimazioni_a3076b0bd1364b4b89453848a14ea2dd7}{}\index{Animazioni@{Animazioni}!Persone\+Detail@{Persone\+Detail}}
+\index{Persone\+Detail@{Persone\+Detail}!Animazioni@{Animazioni}}
+\subsubsection[{Persone\+Detail}]{\setlength{\rightskip}{0pt plus 5cm}Animazioni\+::\+Persone\+Detail (
+\begin{DoxyParamCaption}
+\item[{{\bf Persona} $\ast$}]{persone\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{num, }
+\item[{int}]{id\+\_\+stanza, }
+\item[{int}]{id\+\_\+livello}
+\end{DoxyParamCaption}
+)}\label{classAnimazioni_a3076b0bd1364b4b89453848a14ea2dd7}
+
+
+mostra a video tutti i dettagli dei personaggi (giocatore,aiutanti e nemici) presenti nella stanza corrente 
+
+
+\begin{DoxyParams}{Parameters}
+{\em persone\mbox{[}$\,$\mbox{]}} & vettore di tutte le persone che si vogliono descrivere \\
+\hline
+{\em num} & numero di persone che si vogliono descrivere \\
+\hline
+{\em id\+\_\+stanza} & rappresenta l\textquotesingle{}identificatore della stanza \\
+\hline
+{\em id\+\_\+livello} & id\+Livello di tutte le stanze che si vogliono rappresentare per uno stesso \hyperlink{classLivello}{Livello} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Animazioni_8hpp}{Animazioni.\+hpp}\item 
+Animazioni.\+cpp\end{DoxyCompactItemize}

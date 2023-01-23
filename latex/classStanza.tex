@@ -1,0 +1,162 @@
+\hypertarget{classStanza}{}\section{Stanza Class Reference}
+\label{classStanza}\index{Stanza@{Stanza}}
+
+
+defisce le specifiche della stanza di ogni livello di gioco  
+
+
+
+
+{\ttfamily \#include $<$Stanza.\+hpp$>$}
+
+
+
+Collaboration diagram for Stanza\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classStanza__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classStanza_ab2cf3e8b8ff07d0b2e085e811d4bd877}{set\+Index\+Stanza} (int new\+Index)
+\begin{DoxyCompactList}\small\item\em modifica l\textquotesingle{}indice della stanza \end{DoxyCompactList}\item 
+\hypertarget{classStanza_acb46dd0c2fd4babf46a3e7df63d686e8}{}int \hyperlink{classStanza_acb46dd0c2fd4babf46a3e7df63d686e8}{get\+Index\+Stanza} ()\label{classStanza_acb46dd0c2fd4babf46a3e7df63d686e8}
+
+\begin{DoxyCompactList}\small\item\em Ritorna l\textquotesingle{}indice della stanza. \end{DoxyCompactList}\item 
+void \hyperlink{classStanza_a4fa142675917f53dfe48ce5fa1106efc}{set\+Index\+Livello} (int new\+Index)
+\begin{DoxyCompactList}\small\item\em modifica l\textquotesingle{}indice del livello \end{DoxyCompactList}\item 
+\hypertarget{classStanza_acc5183dd818e4e84d55a67a0c0e15c29}{}int \hyperlink{classStanza_acc5183dd818e4e84d55a67a0c0e15c29}{get\+Index\+Livello} ()\label{classStanza_acc5183dd818e4e84d55a67a0c0e15c29}
+
+\begin{DoxyCompactList}\small\item\em Ritorna l\textquotesingle{}indice dellivello. \end{DoxyCompactList}\item 
+void \hyperlink{classStanza_a2f712f06413ec65a642c03022b02d292}{aggiorna\+Aiutanti} (\hyperlink{classGiocatore}{Giocatore} $\ast$giocatore)
+\begin{DoxyCompactList}\small\item\em modifica (quando possibile) il numero di aiutanti per il giocatore \mbox{[}chiamato quando si cambia stanza\mbox{]} \end{DoxyCompactList}\item 
+\hyperlink{classStanza_aebe5bf4edcd60661ebe64fba556e8336}{Stanza} (\hyperlink{classGiocatore}{Giocatore} $\ast$giocatore, int id\+Livello, int id\+Stanza, int id\+\_\+matrix\+\_\+used\mbox{[}$\,$\mbox{]}, int num\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Costruttore. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classStanza_a8d01d55aec56b48611025064d84e66de}{}char \hyperlink{classStanza_a8d01d55aec56b48611025064d84e66de}{stanza} \mbox{[}\hyperlink{Stanza_8hpp_a6fbfb5f74a35d56ae39aadb31fddc714}{S\+T\+A\+N\+Z\+A\+\_\+\+Y}\mbox{]}\mbox{[}\hyperlink{Stanza_8hpp_a57d21332cfb3a4adb7041c0db1ada16b}{S\+T\+A\+N\+Z\+A\+\_\+\+X}\mbox{]}\label{classStanza_a8d01d55aec56b48611025064d84e66de}
+
+\begin{DoxyCompactList}\small\item\em matrice di caratteri della stanza corrente \end{DoxyCompactList}\item 
+\hypertarget{classStanza_a78ad309c46eb00c0cbcae7b58f4721ef}{}\hyperlink{classStanza}{Stanza} $\ast$ \hyperlink{classStanza_a78ad309c46eb00c0cbcae7b58f4721ef}{top}\label{classStanza_a78ad309c46eb00c0cbcae7b58f4721ef}
+
+\begin{DoxyCompactList}\small\item\em puntatore alla stanza sopra quella corrente \end{DoxyCompactList}\item 
+\hypertarget{classStanza_a3c20c96e81f625b1c58525a14ca027c3}{}\hyperlink{classStanza}{Stanza} $\ast$ \hyperlink{classStanza_a3c20c96e81f625b1c58525a14ca027c3}{bottom}\label{classStanza_a3c20c96e81f625b1c58525a14ca027c3}
+
+\begin{DoxyCompactList}\small\item\em puntatore alla stanza sotto quella corrente \end{DoxyCompactList}\item 
+\hypertarget{classStanza_ab9fa444357627e27fb3227420c1612c8}{}\hyperlink{classStanza}{Stanza} $\ast$ \hyperlink{classStanza_ab9fa444357627e27fb3227420c1612c8}{right}\label{classStanza_ab9fa444357627e27fb3227420c1612c8}
+
+\begin{DoxyCompactList}\small\item\em puntatore alla stanza destra rispetto quella corrente \end{DoxyCompactList}\item 
+\hypertarget{classStanza_aa5b25baa5912ff3be6eef823fd795146}{}\hyperlink{classStanza}{Stanza} $\ast$ \hyperlink{classStanza_aa5b25baa5912ff3be6eef823fd795146}{left}\label{classStanza_aa5b25baa5912ff3be6eef823fd795146}
+
+\begin{DoxyCompactList}\small\item\em puntatore alla stanza sinistra rispetto a quella corrente \end{DoxyCompactList}\item 
+\hypertarget{classStanza_aea771b438aed5500cc5de7128b983980}{}int \hyperlink{classStanza_aea771b438aed5500cc5de7128b983980}{n\+\_\+oggetti}\label{classStanza_aea771b438aed5500cc5de7128b983980}
+
+\begin{DoxyCompactList}\small\item\em numero di oggetti raccoglibili nella stanza \end{DoxyCompactList}\item 
+\hypertarget{classStanza_a6382ef202b181ce7cf10793b8eeea2f3}{}\hyperlink{structOggetto__pos}{Oggetto\+\_\+pos} $\ast$$\ast$ \hyperlink{classStanza_a6382ef202b181ce7cf10793b8eeea2f3}{oggetti}\label{classStanza_a6382ef202b181ce7cf10793b8eeea2f3}
+
+\begin{DoxyCompactList}\small\item\em oggetti raccoglibili nella stanza \end{DoxyCompactList}\item 
+\hypertarget{classStanza_a79632b76d7a97af52b5d350825333615}{}int \hyperlink{classStanza_a79632b76d7a97af52b5d350825333615}{num\+\_\+nemici}\label{classStanza_a79632b76d7a97af52b5d350825333615}
+
+\begin{DoxyCompactList}\small\item\em numero di nemici attualmente generati \end{DoxyCompactList}\item 
+\hypertarget{classStanza_a95599af893affa58946f48214103915d}{}\hyperlink{classPersonaggio}{Personaggio} $\ast$ \hyperlink{classStanza_a95599af893affa58946f48214103915d}{nemici} \mbox{[}\hyperlink{classStanza_a3ee6dc829044d6b19fa3ef214ffd3ac9}{num\+\_\+max\+\_\+nemici}\mbox{]}\label{classStanza_a95599af893affa58946f48214103915d}
+
+\begin{DoxyCompactList}\small\item\em vettore di nemici presenti (e assenti) della stanza \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classStanza_a3ee6dc829044d6b19fa3ef214ffd3ac9}{}static const int \hyperlink{classStanza_a3ee6dc829044d6b19fa3ef214ffd3ac9}{num\+\_\+max\+\_\+nemici} =10\label{classStanza_a3ee6dc829044d6b19fa3ef214ffd3ac9}
+
+\begin{DoxyCompactList}\small\item\em numero massimo di nemici generabili per la stanza \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+defisce le specifiche della stanza di ogni livello di gioco 
+
+Definizione della struttura \hyperlink{structOggetto__pos}{Oggetto\+\_\+pos}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classStanza_aebe5bf4edcd60661ebe64fba556e8336}{}\index{Stanza@{Stanza}!Stanza@{Stanza}}
+\index{Stanza@{Stanza}!Stanza@{Stanza}}
+\subsubsection[{Stanza}]{\setlength{\rightskip}{0pt plus 5cm}Stanza\+::\+Stanza (
+\begin{DoxyParamCaption}
+\item[{{\bf Giocatore} $\ast$}]{giocatore, }
+\item[{int}]{id\+Livello, }
+\item[{int}]{id\+Stanza, }
+\item[{int}]{id\+\_\+matrix\+\_\+used\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{num\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{classStanza_aebe5bf4edcd60661ebe64fba556e8336}
+
+
+Costruttore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em giocatore} & Indica il giocatore (umano) presente nella stanza \\
+\hline
+{\em id\+Livello} & Indice del livello della stanza \\
+\hline
+{\em id\+Stanza} & Indice della stanza per uno specifico livello \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classStanza_a2f712f06413ec65a642c03022b02d292}{}\index{Stanza@{Stanza}!aggiorna\+Aiutanti@{aggiorna\+Aiutanti}}
+\index{aggiorna\+Aiutanti@{aggiorna\+Aiutanti}!Stanza@{Stanza}}
+\subsubsection[{aggiorna\+Aiutanti}]{\setlength{\rightskip}{0pt plus 5cm}Stanza\+::aggiorna\+Aiutanti (
+\begin{DoxyParamCaption}
+\item[{{\bf Giocatore} $\ast$}]{giocatore}
+\end{DoxyParamCaption}
+)}\label{classStanza_a2f712f06413ec65a642c03022b02d292}
+
+
+modifica (quando possibile) il numero di aiutanti per il giocatore \mbox{[}chiamato quando si cambia stanza\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em giocatore} & Indica il giocatore a cui aggiornare i propri aiutanti \\
+\hline
+\end{DoxyParams}
+\hypertarget{classStanza_a4fa142675917f53dfe48ce5fa1106efc}{}\index{Stanza@{Stanza}!set\+Index\+Livello@{set\+Index\+Livello}}
+\index{set\+Index\+Livello@{set\+Index\+Livello}!Stanza@{Stanza}}
+\subsubsection[{set\+Index\+Livello}]{\setlength{\rightskip}{0pt plus 5cm}Stanza\+::set\+Index\+Livello (
+\begin{DoxyParamCaption}
+\item[{int}]{new\+Index}
+\end{DoxyParamCaption}
+)}\label{classStanza_a4fa142675917f53dfe48ce5fa1106efc}
+
+
+modifica l\textquotesingle{}indice del livello 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Index} & nuovo indice del livello della stanza \\
+\hline
+\end{DoxyParams}
+\hypertarget{classStanza_ab2cf3e8b8ff07d0b2e085e811d4bd877}{}\index{Stanza@{Stanza}!set\+Index\+Stanza@{set\+Index\+Stanza}}
+\index{set\+Index\+Stanza@{set\+Index\+Stanza}!Stanza@{Stanza}}
+\subsubsection[{set\+Index\+Stanza}]{\setlength{\rightskip}{0pt plus 5cm}Stanza\+::set\+Index\+Stanza (
+\begin{DoxyParamCaption}
+\item[{int}]{new\+Index}
+\end{DoxyParamCaption}
+)}\label{classStanza_ab2cf3e8b8ff07d0b2e085e811d4bd877}
+
+
+modifica l\textquotesingle{}indice della stanza 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Index} & nuovo indice della stanza \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Stanza_8hpp}{Stanza.\+hpp}\item 
+Stanza.\+cpp\end{DoxyCompactItemize}

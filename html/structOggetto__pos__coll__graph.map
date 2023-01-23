@@ -1,0 +1,6 @@
+<map id="Oggetto_pos" name="Oggetto_pos">
+<area shape="rect" id="node2" href="$structcoordinate.html" title="Questa struct definisce le coordinate riferite localmente all stanza. " alt="" coords="5,95,88,121"/>
+<area shape="rect" id="node3" href="$structOggetto.html" title="Oggetto" alt="" coords="113,95,181,121"/>
+<area shape="rect" id="node4" href="$structKIT.html" title="Questa struct definisce le caratteristiche di un kit medico. " alt="" coords="89,5,132,32"/>
+<area shape="rect" id="node5" href="$classArma.html" title="questa classe definisce le specifiche dell&#39;arma dei personaggi " alt="" coords="156,5,209,32"/>
+</map>

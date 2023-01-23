@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classPersona.html" title="definisce le caratterische di una persona (che è la classe padre radice di tutte le sue derivate) ..." alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node2" href="$classIA__Persona.html" title="Gestisce tutte le azioni che vengono considerate come azioni del turno di gioco. " alt="" coords="124,5,215,32"/>
+<area shape="rect" id="node3" href="$classPersonaggio.html" title="Filgia di IA_Persona, definisce un metodo per la gestione automatica di aiutanti e nemici..." alt="" coords="263,5,357,32"/>
+<area shape="rect" id="node4" href="$classGiocatore.html" title="Figlia di Persona definisce le specifiche aggiuntive del giocatore utente. " alt="" coords="405,5,484,32"/>
+</map>

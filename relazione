@@ -1,0 +1,106 @@
+Alma Mater Studiorum Università di Bologna
+
+ART OF SURVIVAL [Progetto di programmazione 2016/2017]
+
+[Per maggiori dettagli sul codice aprire al documentazione doxygen]
+
+Prima di incominciare questa relazione si fanno notare appunti.
+Innanzitutto il gico è stato assemblato interamento con g++, debuggato con gdb e compilato col Makefile tutto. Inoltre il gioco fa uso della 
+libreria ncurses che di regola è built-in in tutte le distribuzioni Linux e anche per MacOsx. Tuttavia ci sono alcune versioni di Linux e MacOS che non la implementano ma utilizzano altre equivalenti. Infatti la ncurses è alla base della gestione della shell di Linux e di quella di MacOs. 
+Dato che il gioco fa uso propriamente della ncurse nel Makefile per la compilazione è inserito un comando per installare la incurses in caso non fosse presente.
+
+Il videogioco dal punto di vista della storyline (necessaria per defire una quest principale che definisce a sua vola la fine del
+gioco) è ambientata nel futuro ipotetico del mondo di Terminator. Il giocatore che impersona John Connor deve (assieme ai suoi compagni)
+recuperare tutti pezzi di una macchina del tempo per tornare indietro ed impedire la creazone di skynet.
+
+Il videogioco è stato realizzato da Luca Tabanelli, Francesco Palmisano e Nicola Serra. Ognuno di  loro ha vuto i seguenti compiti:
+-Luca Tabanelli si è occupato della definizione ed implementazione delle classi Persona, Giocatore e Personaggio
+-Nicola Serra si è occupato della definizione ed implementazione delle classi Stanza e Livello
+-Francesco Palmisano si è occupato della definizione ed implementazione delle classi Animazioni,Arma,IA_Persona,Game e avnedo una visione
+ globale del progetto si è occupato anche del fase di debugging.
+
+Il video gioco è stato pensato per un giocatore umano che assieme ad alcuni aiutanti gestiti dal computer deve completare la quest principale
+scontrandosi con nemici (anch'essi gestisti dal computer).
+
+Paralando della realizzazione delle classi si va per ordine. 
+
+[Gestione di Luca Tabanelli]
+Innanzitutto si è definita una persona come un'oggetto che abbia:
+un nome, un tipo (Eroe,Aiutante,Nemico), una vita, uno scudo,uno specifico carattere, delle coordinate,uno scudo,uno zaino ed una arma corrente. In particolare 
+il carattere indica appunto il carattere della persona che poi verrà stampato a video. Le coordinate indicano la posizione della persona
+sulla stanza corrente del gioco ed un booleano scudo che indica lo stato di esso stesso. Lo zaino è un vettore di oggetti che possono essere raccolti dal terreno della stanza e poi salvati in esso in modo tale che la persona possa selezionarli ed utilizzarli succesivamente. Il tipo Oggetto è definito come l'insieme di due puntatori uno di tipo kit medico e l'altro di tipo arma. Dato che l'oggetto indica un singolo oggetto entrambi i puntatori non possono essere definiti ed entrambi non possono non essere non definiti. Specificatamente, il kit medico definisce le unità di vita del kit stesso e la quantità indica appunto le scorte del kit stesso. Infine l'arma corrente(la cui classi è spiegata in seguito) è un puntatore all'arma che la Persona utilizza senza selezionarla dallo zaino.Oltre a tutti questi attributi la classe Persona è anche correlata di metodi
+che oltre ai classici getter/setter/costruttore ci sono metodi come comparePersona, addOggetto, removeOggetto tutti accessori alla gestione
+dello zaino.
+
+Figlia della classe Persona c'è Giocatore che in più definisce le specifiche per gli aiutanti. Infatti giocatore contiene un vettore di
+lunghezza massima predefinita di aiutanti ed un indice di aiutanti attualmente presenti in esso, oltre a dei metodi accessori come comparePersona,
+getNum aiutanti ecc. Questa classe è molto importante perchè va definire uno dei must delle specifiche ovvero quello di avere un numero variabile di aiutanti per uno stesso (ed unico) giocatore umano. Sebbene il numero di aiutanti massimo è fisso ciò non toglie che si possano aggiungere
+e togliere aiutanti a seconda dei casi.
+Figlia di classe IA_Persona (che verrà definita in seguito) c'è Personaggio che sostanzialmente contiene tutti quei metodi che definiscono
+le azioni delle persone nei turni, c'è la classe Personaggio. Quest'ultima in più definisce un Metodo AutoAction che permette semplicemnte
+la gestione automatica delle azioni degli aiutanti e nemici durante i turni. Sommariamente il personaggio generico (aiutante o nemico)
+prima controlla se vicino a se c'è un oggetto raccoglibile e se lo trova lo raccoglie. Altrimenti controlla tutte le persone presenti nella
+sua stessa stanza e cerca di sparare a quella che ha almeno uno delle componeniti delle coordinate in comune. Altrimenti si muove randomicamente
+per la stanza.
+
+[Gestione di Nicola Serra]
+Fino ad ora si è parlato solamente di entità del gioco ma non del suo ambiente. Le specifiche affermavano che il gioco doveva essere gestito
+tramite delle stanze e livelli, che le stesse stanze di un livello occupavano una griglia rettangolare ma non complemente e che non c'era limite
+al numero di stanze generabili e di livelli. Tutti questi must sono stati rispettati ma prima di approfondirli, Occorre definire Stanza e Livello.
+Stanza oltre a contenuere la matrice della stanza che viene stampata sullo schermo e suoi metodi accessori contiene quattro puntatori
+a Stanze ad essa adiacenti. Di fatto Stanza può essere vista con una lista a 4 dimensioni. Questi 4 puntatori indicano le porte delle
+stanze grazie alle quali è possible cambiare stanza. In caso della prima o ultima stanza del livello al posto delle porte si stampano lo scale.
+Nel costruttore stanza è stata definita in modo tale da prendere casualmente da file
+un pattern standard di stanza, caricarlo ed inserire su di esso tutti gli oggetti raccoglibili (kit ed armi differenziandoli) e generando di volta
+in volta tutti i nemici. Quest'ultimo punto è cruciale perché ad ogni stanza è associato un vettore di nemici (di lunghezza massima fissa),
+così facendo cambiando stanza cambiano anche i nemici. Nella classe stanza ci sono metodi anche per la gestione degli aiutanti del giocatore.
+Sembra paradossale che gli aiutanti della classe Giocatore vengano gestiti da Stanza ma non lo è. Infatti (in accordo con le specifiche e 
+la storyline) ogni volta che si cambia stanza si può decidere randomicante se aggiungere o meno altri aiutanti, così da rendere il numero di
+aiutanti ancora più variabile.
+Mentre la classe Livello gestisce specialmente la sua struttura a griglia (secondo le specifiche) di esso stesso. Essa infatti oltre ad avere i puntatori
+al livello successivo e precedente (come in una normale lista bidirezionale) e ad alcuni metodi accessori,ha il costruttore che gestisce la griglia del livello. Dato che il livello deve avere una tale struttura, il costruttore omonimo la crea randomicamente in modo tale da 
+non avere una struttura casuale ma che allo stesso tempo tutte le stanze siano raggiungibili (lavorando con i quattro puntatori di stanza).
+Così facendo il numero delle stanze per ogni livello è finito, tuttavia dato che non c'è un limite alla creazione dei livelli ci sono indirettamente infinite stanze. Inoltre la struttura dei livelli viene di volta in volta salvata quindi si può anche tornare indietro (in acoordo con le specifiche).
+
+[Gestione di Francesco Palmisano]
+Precedentemente si è parlato di classe Arma e di classe IA_Persona, bene è arrivato il momento di soffermarsi su di loro.
+Innzazitto tutte le persone hanno almeno un'arma (aiutante,nemico ed eroe) che variano a seconda del livello, in modo da attaccarsi a vicenda
+(tranne ovviamente aiutanti ed eroe).
+La classe Arma definisce tutte le specifiche di un'arma come gittata, munizioni, danni, numero di proiettili per sparo ecc.
+la classe arma è elementare e la si può approfondire nella documentazione Doxygen.
+La classe IA_Persona in certi versi rappresenta forse il cuore del gioco stesso non che risolve uno dei must più importanti delle specifiche,
+quello della gestione dei turni. Sostanzialmente ogni persona può effettuare una solo azione del turno (visitare lo zaino o aprire il menu non
+valogono come azioni valide per terminare il turno) che sono rispettivamente:
+-Passo=permette alla pesona di spostarsi nella stanza;
+-Raccogli=permette di raccolgiere un oggetto vicino e di riporlo nello zaino;
+-Dialoga= permette di dialogare con i propri aiutanti ed a secondo del livello si può variare da una semplice conversazione ad dei regali  che  consistono in oggetti raccoglibili extra trovati dagli aiutanti;
+-Spara= permette di sparare con l'arma corrente e lo sparo è in funzione del numero dei proiettili munizioni, gittata ed ostacoli vicini.
+Di fatto è naturale pensare che IA_Persona sia la classe padre di Personaggio proprio perché quest'ultima va ad utilizzare tutti i metodi della prima.
+
+Oltre alla classe livello c'è la classe Animazioni che tramite la libreria ncurses effettua tutte quelle animazioni che caratterizzano il gioco
+stesso (salita scale, discesa scale,gestione zaino,gestione menu). L'unica animazione davvero molto importante è quella riguardante la stampa
+della minimappa del livello corrente. Con questa animazione si può vedere ancora di più la struttura a griglia del livello ed indica inoltre la posizione del giocatore. Inoltre c'è anche l'animzaione che permette di cambiare i controlli utente (in caso di scomodità).
+
+In fine c'è la classe Game che ingloba tutte le classe precedenti e le utilizza tramite il metodo start. Infatti è nel metodo start
+che è gestita la gestione dei turni con un vettore di tipo Turno che contiene la persona in esame ed un flag chiamto turno che se è true
+vuol dire che è il suo turno, false altrimenti. L'intero gioco poggia su un do-while che se il turno è del giocatore umano attende input da esso e si comporta di conseguenza altrimenti tramite il metodo AutoAction della classe Personaggio il metodo start gestisce tutte le altre entità del gioco. Dato che il numero di nemici ed aiutanti è variabile nel corso del gioco,non solo per generazione, ma anche per eliminazione
+ad ogni iterazione del ciclo do-while si controllano tutte le entità e se nel caso hanno si abbia una persona che abbia una vita<=0 viene eliminata dal gioco. 
+Oltre alla classe Game c'è la funzione main che richiama solamente il metodo start, crea il giocatore manda in esecuzione il frammento della storyline e fa partire il gioco.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

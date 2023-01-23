@@ -1,0 +1,5 @@
+<map id="Giocatore" name="Giocatore">
+<area shape="rect" id="node2" href="$classPersonaggio.html" title="Filgia di IA_Persona, definisce un metodo per la gestione automatica di aiutanti e nemici..." alt="" coords="5,155,100,181"/>
+<area shape="rect" id="node3" href="$classIA__Persona.html" title="Gestisce tutte le azioni che vengono considerate come azioni del turno di gioco. " alt="" coords="7,80,98,107"/>
+<area shape="rect" id="node4" href="$classPersona.html" title="definisce le caratterische di una persona (che è la classe padre radice di tutte le sue derivate) ..." alt="" coords="17,5,88,32"/>
+</map>

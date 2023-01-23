@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['setarma',['setArma',['../classPersona.html#a60a40a075ceb82c3a5586c589478abe4',1,'Persona']]],
+  ['setcarattere',['setCarattere',['../classPersona.html#a9fcee7f1342f27a4c34d8e8275f4ba24',1,'Persona']]],
+  ['setcoordinate',['setCoordinate',['../classPersona.html#a595fabb934aad33a42b33f4d2d2baf91',1,'Persona']]],
+  ['setdanni',['setDanni',['../classArma.html#abbd285ffdc68150ef63ee5e650bfad3a',1,'Arma']]],
+  ['setgittata',['setGittata',['../classArma.html#a5a963f9968090740359a6f10f3cee9a3',1,'Arma']]],
+  ['setindex',['setIndex',['../classArma.html#af92b4737cebe4dcbd7d116786d3dc813',1,'Arma']]],
+  ['setindexlivello',['setIndexLivello',['../classStanza.html#a4fa142675917f53dfe48ce5fa1106efc',1,'Stanza']]],
+  ['setindexstanza',['setIndexStanza',['../classStanza.html#ab2cf3e8b8ff07d0b2e085e811d4bd877',1,'Stanza']]],
+  ['setlivello',['setLivello',['../classLivello.html#a4b3938ca43f2b73c7d326077f737147a',1,'Livello']]],
+  ['setmunizioni',['setMunizioni',['../classArma.html#abfdb5fc20a25ed0bce424800abe303f9',1,'Arma']]],
+  ['setnome',['setNome',['../classArma.html#a159430b592be94474863453b7fd148bb',1,'Arma']]],
+  ['setnumproiettili',['setNumProiettili',['../classArma.html#a20bcc2beb289293c2ff669347dd85ee7',1,'Arma']]],
+  ['setproiettile',['setProiettile',['../classArma.html#aba32016f48afb9c760bd50125331212e',1,'Arma']]],
+  ['setscudo',['setScudo',['../classIA__Persona.html#a71520669c85eea90e2fd1dac2a7372d0',1,'IA_Persona::setScudo()'],['../classPersona.html#a20449ddc606a872a8905c94fe0ed716a',1,'Persona::setScudo()']]],
+  ['spara',['spara',['../classIA__Persona.html#abd04c4e981f7e1260784c1d7f7a3614f',1,'IA_Persona']]],
+  ['stanza',['Stanza',['../classStanza.html#aebe5bf4edcd60661ebe64fba556e8336',1,'Stanza']]],
+  ['subvita',['subVita',['../classPersona.html#af759e5da9d0972da4a74ce6a56e271aa',1,'Persona']]]
+];

@@ -1,0 +1,107 @@
+\hypertarget{classLivello}{}\section{Livello Class Reference}
+\label{classLivello}\index{Livello@{Livello}}
+
+
+Definisce le specifiche che deve avere un livello di gioco.  
+
+
+
+
+{\ttfamily \#include $<$Livello.\+hpp$>$}
+
+
+
+Collaboration diagram for Livello\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classLivello__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLivello_ac1d34208a12139365a7eb749a5668f8f}{Livello} (\hyperlink{classGiocatore}{Giocatore} $\ast$gamer, \hyperlink{classLivello}{Livello} $\ast$\hyperlink{classLivello_a05397a3b59545c76f627de49f23d70a8}{pre}, int direction\+\_\+pre\+\_\+stanza, int livello, int num\+\_\+time\+\_\+machine\+\_\+part)
+\begin{DoxyCompactList}\small\item\em Costruttore che crea le stanze del livello e genera i pezzi della macchina del tempo. \end{DoxyCompactList}\item 
+\hypertarget{classLivello_ac68f1cff83b129ca15659d114d01019e}{}int \hyperlink{classLivello_ac68f1cff83b129ca15659d114d01019e}{get\+N\+Livello} ()\label{classLivello_ac68f1cff83b129ca15659d114d01019e}
+
+\begin{DoxyCompactList}\small\item\em ritorna l\textquotesingle{}indice del livello \end{DoxyCompactList}\item 
+void \hyperlink{classLivello_a4b3938ca43f2b73c7d326077f737147a}{set\+Livello} (int livello)
+\begin{DoxyCompactList}\small\item\em modifica l\textquotesingle{}indice del livello \end{DoxyCompactList}\item 
+\hypertarget{classLivello_a6c9fa17a5a53d8d7f5ee588fb262e204}{}int \hyperlink{classLivello_a6c9fa17a5a53d8d7f5ee588fb262e204}{get\+Num\+Stanze} ()\label{classLivello_a6c9fa17a5a53d8d7f5ee588fb262e204}
+
+\begin{DoxyCompactList}\small\item\em ritorna il numero delle stanze generati per il livello \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classLivello_a601562dc27ce8063d5335afe287a1301}{}\hyperlink{classStanza}{Stanza} $\ast$ \hyperlink{classLivello_a601562dc27ce8063d5335afe287a1301}{s}\label{classLivello_a601562dc27ce8063d5335afe287a1301}
+
+\begin{DoxyCompactList}\small\item\em prima stanza del livello \end{DoxyCompactList}\item 
+\hypertarget{classLivello_a787f31d6da22aeaea69f3a2a4603c918}{}\hyperlink{classLivello}{Livello} $\ast$ \hyperlink{classLivello_a787f31d6da22aeaea69f3a2a4603c918}{next}\label{classLivello_a787f31d6da22aeaea69f3a2a4603c918}
+
+\begin{DoxyCompactList}\small\item\em puntatore al livello successivo \end{DoxyCompactList}\item 
+\hypertarget{classLivello_a05397a3b59545c76f627de49f23d70a8}{}\hyperlink{classLivello}{Livello} $\ast$ \hyperlink{classLivello_a05397a3b59545c76f627de49f23d70a8}{pre}\label{classLivello_a05397a3b59545c76f627de49f23d70a8}
+
+\begin{DoxyCompactList}\small\item\em puntatore al livello precedente \end{DoxyCompactList}\item 
+\hypertarget{classLivello_a9175836818c82d7f13dd47c68f125b0d}{}int \hyperlink{classLivello_a9175836818c82d7f13dd47c68f125b0d}{num\+\_\+stanze}\label{classLivello_a9175836818c82d7f13dd47c68f125b0d}
+
+\begin{DoxyCompactList}\small\item\em numero di stanze generate nel livello ($<$=n\+\_\+stanze) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definisce le specifiche che deve avere un livello di gioco. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLivello_ac1d34208a12139365a7eb749a5668f8f}{}\index{Livello@{Livello}!Livello@{Livello}}
+\index{Livello@{Livello}!Livello@{Livello}}
+\subsubsection[{Livello}]{\setlength{\rightskip}{0pt plus 5cm}Livello\+::\+Livello (
+\begin{DoxyParamCaption}
+\item[{{\bf Giocatore} $\ast$}]{gamer, }
+\item[{{\bf Livello} $\ast$}]{pre, }
+\item[{int}]{direction\+\_\+pre\+\_\+stanza, }
+\item[{int}]{livello, }
+\item[{int}]{num\+\_\+time\+\_\+machine\+\_\+part}
+\end{DoxyParamCaption}
+)}\label{classLivello_ac1d34208a12139365a7eb749a5668f8f}
+
+
+Costruttore che crea le stanze del livello e genera i pezzi della macchina del tempo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamer} & \hyperlink{classGiocatore}{Giocatore} utente \\
+\hline
+{\em pre} & \hyperlink{classLivello}{Livello} precedente (=N\+U\+L\+L se è il primo livello, !=N\+U\+L\+L altrimenti) \\
+\hline
+{\em direction\+\_\+pre\+\_\+stanza} & direzione delle scale dell\textquotesingle{}ultima stanza del livello precedente (4=su,2=giu,1=sx,3,dx) \\
+\hline
+{\em livello} & indice del livello \\
+\hline
+{\em num\+\_\+time\+\_\+machine\+\_\+part} & numero di pezzi della macchina del tempo da generare nel livello \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLivello_a4b3938ca43f2b73c7d326077f737147a}{}\index{Livello@{Livello}!set\+Livello@{set\+Livello}}
+\index{set\+Livello@{set\+Livello}!Livello@{Livello}}
+\subsubsection[{set\+Livello}]{\setlength{\rightskip}{0pt plus 5cm}Livello\+::set\+Livello (
+\begin{DoxyParamCaption}
+\item[{int}]{livello}
+\end{DoxyParamCaption}
+)}\label{classLivello_a4b3938ca43f2b73c7d326077f737147a}
+
+
+modifica l\textquotesingle{}indice del livello 
+
+
+\begin{DoxyParams}{Parameters}
+{\em livello} & nuovo livello \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Livello_8hpp}{Livello.\+hpp}\item 
+Livello.\+cpp\end{DoxyCompactItemize}

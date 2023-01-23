@@ -1,0 +1,189 @@
+\hypertarget{classGiocatore}{}\section{Giocatore Class Reference}
+\label{classGiocatore}\index{Giocatore@{Giocatore}}
+
+
+Figlia di \hyperlink{classPersona}{Persona} definisce le specifiche aggiuntive del giocatore utente.  
+
+
+
+
+{\ttfamily \#include $<$Giocatore.\+hpp$>$}
+
+
+
+Inheritance diagram for Giocatore\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classGiocatore__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Giocatore\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classGiocatore__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGiocatore_ab05bd16f9ab3323dc827c1cb41bf185e}{Giocatore} (char \hyperlink{classPersona_a15d4ded972e8bdd3f02e89c6ccb71b73}{nome}\mbox{[}$\,$\mbox{]}, char \hyperlink{classPersona_ae7069f0467a3b2f1d269c1a143b730eb}{tipo}\mbox{[}$\,$\mbox{]}, int \hyperlink{classPersona_a1e784d3a56cddd6ba8e81387df1efc7b}{vita}, char \hyperlink{classPersona_a1fff44e46be477b79413387307b0aaff}{carattere})
+\begin{DoxyCompactList}\small\item\em Costruttore. \end{DoxyCompactList}\item 
+int \hyperlink{classGiocatore_a1f05e45f9694771260a7f9aee5265821}{add\+Aiutante} (\hyperlink{classPersonaggio}{Personaggio} nuovo)
+\begin{DoxyCompactList}\small\item\em aggiunge un nuovo aiutante nel vettore aiuti (=0 se ha aggiunto nuovo, !=0 altrimenti) \end{DoxyCompactList}\item 
+bool \hyperlink{classGiocatore_a703b38cbe7f7657ff98018878c15a961}{remove\+Aiutante} (\hyperlink{classPersonaggio}{Personaggio} aiuto)
+\begin{DoxyCompactList}\small\item\em rimuove aiutante aiuto dal vettore aiuti (true se ha eliminato aiuto, false altrimenti) \end{DoxyCompactList}\item 
+bool \hyperlink{classGiocatore_ac9f5c0e981bddc91a6b93b4a6fa48e46}{replace\+Aiutante} (\hyperlink{classPersonaggio}{Personaggio} old, \hyperlink{classPersonaggio}{Personaggio} nuovo)
+\begin{DoxyCompactList}\small\item\em sostituisce l\textquotesingle{}aiutante old con quello buovo nel vettore aiuti (true se ha sostituito, false altrimenti) \end{DoxyCompactList}\item 
+int \hyperlink{classGiocatore_a6ed5fb81af05df594102a6f6d5d7cbd9}{get\+Index\+Aiutante} (\hyperlink{classPersonaggio}{Personaggio} aiuto)
+\begin{DoxyCompactList}\small\item\em ritorna l\textquotesingle{}indice dl vettore riferito ad aiuto \end{DoxyCompactList}\item 
+\hypertarget{classGiocatore_afd1c7f8a65c41d78c245782459fede3f}{}int \hyperlink{classGiocatore_afd1c7f8a65c41d78c245782459fede3f}{get\+Num\+Aiutanti} ()\label{classGiocatore_afd1c7f8a65c41d78c245782459fede3f}
+
+\begin{DoxyCompactList}\small\item\em ritorna il numero di aiutanti attualmente presenti nel vettore di aiuti \end{DoxyCompactList}\item 
+bool \hyperlink{classGiocatore_acb3e7fc5a268671fb5d2628610a91040}{compare\+Persona} (\hyperlink{classPersonaggio}{Personaggio} p, int i)
+\begin{DoxyCompactList}\small\item\em confronta l\textquotesingle{}aiutante p con quello presente nella posizione i-\/esima del vettore di aiuti \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGiocatore_a051497cae381d27b07def9e89231bf6d}{}\hyperlink{classPersonaggio}{Personaggio} $\ast$ \hyperlink{classGiocatore_a051497cae381d27b07def9e89231bf6d}{aiuti} \mbox{[}\hyperlink{classGiocatore_afb448871b667ab644a2a32a0ade42e39}{num\+\_\+max\+\_\+aiuti}\mbox{]}\label{classGiocatore_a051497cae381d27b07def9e89231bf6d}
+
+\begin{DoxyCompactList}\small\item\em vettore degli aiutanti \end{DoxyCompactList}\item 
+\hypertarget{classGiocatore_a8c7c227c90ed564f4e370c790cbef97d}{}int \hyperlink{classGiocatore_a8c7c227c90ed564f4e370c790cbef97d}{num\+\_\+aiuti}\label{classGiocatore_a8c7c227c90ed564f4e370c790cbef97d}
+
+\begin{DoxyCompactList}\small\item\em numero di aiutanti attualmente presenti nel vettore aiuti \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGiocatore_afb448871b667ab644a2a32a0ade42e39}{}static const int \hyperlink{classGiocatore_afb448871b667ab644a2a32a0ade42e39}{num\+\_\+max\+\_\+aiuti} =5\label{classGiocatore_afb448871b667ab644a2a32a0ade42e39}
+
+\begin{DoxyCompactList}\small\item\em costante che indica il numero massimo di aiutanti che si possono avere \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Figlia di \hyperlink{classPersona}{Persona} definisce le specifiche aggiuntive del giocatore utente. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGiocatore_ab05bd16f9ab3323dc827c1cb41bf185e}{}\index{Giocatore@{Giocatore}!Giocatore@{Giocatore}}
+\index{Giocatore@{Giocatore}!Giocatore@{Giocatore}}
+\subsubsection[{Giocatore}]{\setlength{\rightskip}{0pt plus 5cm}Giocatore\+::\+Giocatore (
+\begin{DoxyParamCaption}
+\item[{char}]{nome\mbox{[}$\,$\mbox{]}, }
+\item[{char}]{tipo\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{vita, }
+\item[{char}]{carattere}
+\end{DoxyParamCaption}
+)}\label{classGiocatore_ab05bd16f9ab3323dc827c1cb41bf185e}
+
+
+Costruttore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & nome della persona \\
+\hline
+{\em tipo} & tipo della persona \\
+\hline
+{\em vita} & unità di vita della persona \\
+\hline
+{\em carattere} & carattere stampato a video della persona \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGiocatore_a1f05e45f9694771260a7f9aee5265821}{}\index{Giocatore@{Giocatore}!add\+Aiutante@{add\+Aiutante}}
+\index{add\+Aiutante@{add\+Aiutante}!Giocatore@{Giocatore}}
+\subsubsection[{add\+Aiutante}]{\setlength{\rightskip}{0pt plus 5cm}Giocatore\+::add\+Aiutante (
+\begin{DoxyParamCaption}
+\item[{{\bf Personaggio}}]{nuovo}
+\end{DoxyParamCaption}
+)}\label{classGiocatore_a1f05e45f9694771260a7f9aee5265821}
+
+
+aggiunge un nuovo aiutante nel vettore aiuti (=0 se ha aggiunto nuovo, !=0 altrimenti) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nuovo} & nuovo aiutante da inserire \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGiocatore_acb3e7fc5a268671fb5d2628610a91040}{}\index{Giocatore@{Giocatore}!compare\+Persona@{compare\+Persona}}
+\index{compare\+Persona@{compare\+Persona}!Giocatore@{Giocatore}}
+\subsubsection[{compare\+Persona}]{\setlength{\rightskip}{0pt plus 5cm}Giocatore\+::compare\+Persona (
+\begin{DoxyParamCaption}
+\item[{{\bf Personaggio}}]{p, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{classGiocatore_acb3e7fc5a268671fb5d2628610a91040}
+
+
+confronta l\textquotesingle{}aiutante p con quello presente nella posizione i-\/esima del vettore di aiuti 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & aiutante da confrontare \\
+\hline
+{\em i} & indice del secondo aiutante da confrontare \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGiocatore_a6ed5fb81af05df594102a6f6d5d7cbd9}{}\index{Giocatore@{Giocatore}!get\+Index\+Aiutante@{get\+Index\+Aiutante}}
+\index{get\+Index\+Aiutante@{get\+Index\+Aiutante}!Giocatore@{Giocatore}}
+\subsubsection[{get\+Index\+Aiutante}]{\setlength{\rightskip}{0pt plus 5cm}Giocatore\+::get\+Index\+Aiutante (
+\begin{DoxyParamCaption}
+\item[{{\bf Personaggio}}]{aiuto}
+\end{DoxyParamCaption}
+)}\label{classGiocatore_a6ed5fb81af05df594102a6f6d5d7cbd9}
+
+
+ritorna l\textquotesingle{}indice dl vettore riferito ad aiuto 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aiuto} & aiutante che si vuole conoscere il suo indice \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGiocatore_a703b38cbe7f7657ff98018878c15a961}{}\index{Giocatore@{Giocatore}!remove\+Aiutante@{remove\+Aiutante}}
+\index{remove\+Aiutante@{remove\+Aiutante}!Giocatore@{Giocatore}}
+\subsubsection[{remove\+Aiutante}]{\setlength{\rightskip}{0pt plus 5cm}Giocatore\+::remove\+Aiutante (
+\begin{DoxyParamCaption}
+\item[{{\bf Personaggio}}]{aiuto}
+\end{DoxyParamCaption}
+)}\label{classGiocatore_a703b38cbe7f7657ff98018878c15a961}
+
+
+rimuove aiutante aiuto dal vettore aiuti (true se ha eliminato aiuto, false altrimenti) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aiuto} & aiutante da rimuovere \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGiocatore_ac9f5c0e981bddc91a6b93b4a6fa48e46}{}\index{Giocatore@{Giocatore}!replace\+Aiutante@{replace\+Aiutante}}
+\index{replace\+Aiutante@{replace\+Aiutante}!Giocatore@{Giocatore}}
+\subsubsection[{replace\+Aiutante}]{\setlength{\rightskip}{0pt plus 5cm}Giocatore\+::replace\+Aiutante (
+\begin{DoxyParamCaption}
+\item[{{\bf Personaggio}}]{old, }
+\item[{{\bf Personaggio}}]{nuovo}
+\end{DoxyParamCaption}
+)}\label{classGiocatore_ac9f5c0e981bddc91a6b93b4a6fa48e46}
+
+
+sostituisce l\textquotesingle{}aiutante old con quello buovo nel vettore aiuti (true se ha sostituito, false altrimenti) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em old} & aiutante da sostituire \\
+\hline
+{\em nuovo} & nuovo aiutante \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Giocatore_8hpp}{Giocatore.\+hpp}\item 
+Giocatore.\+cpp\end{DoxyCompactItemize}

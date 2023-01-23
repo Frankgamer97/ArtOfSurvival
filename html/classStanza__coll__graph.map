@@ -1,0 +1,10 @@
+<map id="Stanza" name="Stanza">
+<area shape="rect" id="node2" href="$classPersonaggio.html" title="Filgia di IA_Persona, definisce un metodo per la gestione automatica di aiutanti e nemici..." alt="" coords="5,184,100,211"/>
+<area shape="rect" id="node3" href="$classIA__Persona.html" title="Gestisce tutte le azioni che vengono considerate come azioni del turno di gioco. " alt="" coords="7,95,98,121"/>
+<area shape="rect" id="node4" href="$classPersona.html" title="definisce le caratterische di una persona (che è la classe padre radice di tutte le sue derivate) ..." alt="" coords="17,5,88,32"/>
+<area shape="rect" id="node5" href="$structOggetto__pos.html" title="Questa struct permette l&#39;associazione Oggetto&#45;coordinate. " alt="" coords="125,184,221,211"/>
+<area shape="rect" id="node6" href="$structcoordinate.html" title="Questa struct definisce le coordinate riferite localmente all stanza. " alt="" coords="126,95,209,121"/>
+<area shape="rect" id="node7" href="$structOggetto.html" title="Oggetto" alt="" coords="233,95,301,121"/>
+<area shape="rect" id="node8" href="$structKIT.html" title="Questa struct definisce le caratteristiche di un kit medico. " alt="" coords="210,5,253,32"/>
+<area shape="rect" id="node9" href="$classArma.html" title="questa classe definisce le specifiche dell&#39;arma dei personaggi " alt="" coords="277,5,330,32"/>
+</map>

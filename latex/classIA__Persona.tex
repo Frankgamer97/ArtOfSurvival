@@ -1,0 +1,255 @@
+\hypertarget{classIA__Persona}{}\section{I\+A\+\_\+\+Persona Class Reference}
+\label{classIA__Persona}\index{I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}}
+
+
+Gestisce tutte le azioni che vengono considerate come azioni del turno di gioco.  
+
+
+
+
+{\ttfamily \#include $<$I\+A\+\_\+\+Persona.\+hpp$>$}
+
+
+
+Inheritance diagram for I\+A\+\_\+\+Persona\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classIA__Persona__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+A\+\_\+\+Persona\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classIA__Persona__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIA__Persona_a450a8b02b473b9bc110d65a47326a069}{I\+A\+\_\+\+Persona} (char \hyperlink{classPersona_a15d4ded972e8bdd3f02e89c6ccb71b73}{nome}\mbox{[}50\mbox{]}, char \hyperlink{classPersona_ae7069f0467a3b2f1d269c1a143b730eb}{tipo}\mbox{[}50\mbox{]}, char \hyperlink{classPersona_a1fff44e46be477b79413387307b0aaff}{carattere}, int \hyperlink{classPersona_a1e784d3a56cddd6ba8e81387df1efc7b}{vita})
+\begin{DoxyCompactList}\small\item\em Costruttore. \end{DoxyCompactList}\item 
+void \hyperlink{classIA__Persona_ab8820ce00b02a098bf917e53bf297051}{write\+\_\+object} (char stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]}, \hyperlink{structOggetto__pos}{Oggetto\+\_\+pos} $\ast$$\ast$raccogliere, int num\+\_\+oggetti)
+\begin{DoxyCompactList}\small\item\em stampa sulla matrice della stanza tutti gli oggetti raccoglibili \end{DoxyCompactList}\item 
+\hypertarget{classIA__Persona_a33a4375ebb8e374fd92c88759e28e492}{}bool \hyperlink{classIA__Persona_a33a4375ebb8e374fd92c88759e28e492}{get\+Scudo} ()\label{classIA__Persona_a33a4375ebb8e374fd92c88759e28e492}
+
+\begin{DoxyCompactList}\small\item\em Ritorna lo stato dello scudo. \end{DoxyCompactList}\item 
+bool \hyperlink{classIA__Persona_a71520669c85eea90e2fd1dac2a7372d0}{set\+Scudo} (bool \hyperlink{classPersona_a1af99e040deeb7015e7e99bb2a5128f4}{scudo})
+\begin{DoxyCompactList}\small\item\em Modifica lo stato dello scudo. \end{DoxyCompactList}\item 
+bool \hyperlink{classIA__Persona_aad9235e41742654f77ea0abc771e51c4}{passo} (\hyperlink{structController}{Controller} $\ast$\hyperlink{structcontroller}{controller}, \hyperlink{structcoordinate}{coordinate} $\ast$new\+\_\+coordinate, char direction, char stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]})
+\begin{DoxyCompactList}\small\item\em effettua l\textquotesingle{}avazamento sulla stanza della persona \end{DoxyCompactList}\item 
+bool \hyperlink{classIA__Persona_ad8ad21a6a106d3d98e18d1c33f906f87}{raccogli} (\hyperlink{structController}{Controller} $\ast$\hyperlink{structcontroller}{controller}, char direction, char stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]}, \hyperlink{structcoordinate}{coordinate} coo\+\_\+stanza, \hyperlink{structOggetto__pos}{Oggetto\+\_\+pos} $\ast$$\ast$raccogliere, int num\+\_\+oggetti, int $\ast$total\+\_\+time\+\_\+machine\+\_\+part\+\_\+catched, int local\+\_\+time\+\_\+machine\+\_\+part, \hyperlink{structTime__Machine}{Time\+\_\+\+Machine} $\ast$$\ast$time\+\_\+machine\+\_\+coo)
+\begin{DoxyCompactList}\small\item\em effettua l\textquotesingle{}avazamento sulla stanza della persona \end{DoxyCompactList}\item 
+bool \hyperlink{classIA__Persona_abd04c4e981f7e1260784c1d7f7a3614f}{spara} (\hyperlink{structController}{Controller} $\ast$\hyperlink{structcontroller}{controller}, char direction, char stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]}, \hyperlink{structcoordinate}{coordinate} coo\+\_\+stanza, \hyperlink{classPersona}{Persona} $\ast$persone\mbox{[}$\,$\mbox{]}, int num\+\_\+persone)
+\begin{DoxyCompactList}\small\item\em effettua l\textquotesingle{}avazamento sulla stanza della persona \end{DoxyCompactList}\item 
+void \hyperlink{classIA__Persona_a361953a09f5d4b94f29824e2f1b83c15}{dialoga} (\hyperlink{classPersona}{Persona} $\ast$giocatore, \hyperlink{classPersona}{Persona} $\ast$persone\mbox{[}$\,$\mbox{]}, int num\+\_\+persone, \hyperlink{structController}{Controller} $\ast$\hyperlink{structcontroller}{controller}, char direction, char stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]}, \hyperlink{structcoordinate}{coordinate} diallogo\+\_\+coo, int livello)
+\begin{DoxyCompactList}\small\item\em effettua l\textquotesingle{}avazamento sulla stanza della persona \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Gestisce tutte le azioni che vengono considerate come azioni del turno di gioco. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classIA__Persona_a450a8b02b473b9bc110d65a47326a069}{}\index{I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}!I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}}
+\index{I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}!I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}}
+\subsubsection[{I\+A\+\_\+\+Persona}]{\setlength{\rightskip}{0pt plus 5cm}I\+A\+\_\+\+Persona\+::\+I\+A\+\_\+\+Persona (
+\begin{DoxyParamCaption}
+\item[{char}]{nome\mbox{[}50\mbox{]}, }
+\item[{char}]{tipo\mbox{[}50\mbox{]}, }
+\item[{char}]{carattere, }
+\item[{int}]{vita}
+\end{DoxyParamCaption}
+)}\label{classIA__Persona_a450a8b02b473b9bc110d65a47326a069}
+
+
+Costruttore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\mbox{[}$\,$\mbox{]}} & nome della persona \\
+\hline
+{\em tipo\mbox{[}$\,$\mbox{]}} & tipo della persona \\
+\hline
+{\em carattere} & carattere della persona \\
+\hline
+{\em vita} & vita della persona \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classIA__Persona_a361953a09f5d4b94f29824e2f1b83c15}{}\index{I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}!dialoga@{dialoga}}
+\index{dialoga@{dialoga}!I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}}
+\subsubsection[{dialoga}]{\setlength{\rightskip}{0pt plus 5cm}I\+A\+\_\+\+Persona\+::dialoga (
+\begin{DoxyParamCaption}
+\item[{{\bf Persona} $\ast$}]{giocatore, }
+\item[{{\bf Persona} $\ast$}]{persone\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{num\+\_\+persone, }
+\item[{{\bf Controller} $\ast$}]{controller, }
+\item[{char}]{direction, }
+\item[{char}]{stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]}, }
+\item[{{\bf coordinate}}]{diallogo\+\_\+coo, }
+\item[{int}]{livello}
+\end{DoxyParamCaption}
+)}\label{classIA__Persona_a361953a09f5d4b94f29824e2f1b83c15}
+
+
+effettua l\textquotesingle{}avazamento sulla stanza della persona 
+
+
+\begin{DoxyParams}{Parameters}
+{\em giocatore} & puntatore al giocatore \\
+\hline
+{\em persone\mbox{[}$\,$\mbox{]}} & tutte le persone presenti nella (fatta eccezione per i nemici) con cui è possibile dialogare \\
+\hline
+{\em num\+\_\+persone} & numero di persone presenti nella (fatta eccezione per i nemici) con cui è possibile dialogare \\
+\hline
+{\em controller} & puntatore all\textquotesingle{}instanza di tipo \hyperlink{structController}{Controller} per l\textquotesingle{}insieme di tutti i comandi utente \\
+\hline
+{\em direction} & direzione in cui la persona deve andare definito dal controller \\
+\hline
+{\em stanza\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}} & matrice della stanza \\
+\hline
+{\em diallogo\+\_\+coo} & coordinate della messa a video del dialogo \\
+\hline
+{\em livello} & numero del livello durante il dialogo \\
+\hline
+\end{DoxyParams}
+\hypertarget{classIA__Persona_aad9235e41742654f77ea0abc771e51c4}{}\index{I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}!passo@{passo}}
+\index{passo@{passo}!I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}}
+\subsubsection[{passo}]{\setlength{\rightskip}{0pt plus 5cm}I\+A\+\_\+\+Persona\+::passo (
+\begin{DoxyParamCaption}
+\item[{{\bf Controller} $\ast$}]{controller, }
+\item[{{\bf coordinate} $\ast$}]{new\+\_\+coordinate, }
+\item[{char}]{direction, }
+\item[{char}]{stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{classIA__Persona_aad9235e41742654f77ea0abc771e51c4}
+
+
+effettua l\textquotesingle{}avazamento sulla stanza della persona 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & puntatore all\textquotesingle{}instanza di tipo \hyperlink{structController}{Controller} per l\textquotesingle{}insieme di tutti i comandi utente \\
+\hline
+{\em new\+\_\+coordinate} & possibilita di avere le coordinate aggiornate \mbox{[}Opzionale\mbox{]} \\
+\hline
+{\em direction} & direzione in cui la persona deve andare definito dal controller \\
+\hline
+{\em stanza\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}} & matrice della stanza \\
+\hline
+\end{DoxyParams}
+\hypertarget{classIA__Persona_ad8ad21a6a106d3d98e18d1c33f906f87}{}\index{I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}!raccogli@{raccogli}}
+\index{raccogli@{raccogli}!I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}}
+\subsubsection[{raccogli}]{\setlength{\rightskip}{0pt plus 5cm}I\+A\+\_\+\+Persona\+::raccogli (
+\begin{DoxyParamCaption}
+\item[{{\bf Controller} $\ast$}]{controller, }
+\item[{char}]{direction, }
+\item[{char}]{stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]}, }
+\item[{{\bf coordinate}}]{coo\+\_\+stanza, }
+\item[{{\bf Oggetto\+\_\+pos} $\ast$$\ast$}]{raccogliere, }
+\item[{int}]{num\+\_\+oggetti, }
+\item[{int $\ast$}]{total\+\_\+time\+\_\+machine\+\_\+part\+\_\+catched, }
+\item[{int}]{local\+\_\+time\+\_\+machine\+\_\+part, }
+\item[{{\bf Time\+\_\+\+Machine} $\ast$$\ast$}]{time\+\_\+machine\+\_\+coo}
+\end{DoxyParamCaption}
+)}\label{classIA__Persona_ad8ad21a6a106d3d98e18d1c33f906f87}
+
+
+effettua l\textquotesingle{}avazamento sulla stanza della persona 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & puntatore all\textquotesingle{}instanza di tipo \hyperlink{structController}{Controller} per l\textquotesingle{}insieme di tutti i comandi utente \\
+\hline
+{\em direction} & direzione in cui la persona deve andare definito dal controller \\
+\hline
+{\em stanza\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}} & matrice della stanza \\
+\hline
+{\em coo\+\_\+stanza} & coordinate della stanza sullo schermo \\
+\hline
+{\em raccogliere} & oggetti raccoglibili della stanza \\
+\hline
+{\em num\+\_\+oggetti} & numero di oggetti raccoglibili \\
+\hline
+\end{DoxyParams}
+\hypertarget{classIA__Persona_a71520669c85eea90e2fd1dac2a7372d0}{}\index{I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}!set\+Scudo@{set\+Scudo}}
+\index{set\+Scudo@{set\+Scudo}!I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}}
+\subsubsection[{set\+Scudo}]{\setlength{\rightskip}{0pt plus 5cm}I\+A\+\_\+\+Persona\+::set\+Scudo (
+\begin{DoxyParamCaption}
+\item[{bool}]{scudo}
+\end{DoxyParamCaption}
+)}\label{classIA__Persona_a71520669c85eea90e2fd1dac2a7372d0}
+
+
+Modifica lo stato dello scudo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scudo} & nuovo stato dello scudo \\
+\hline
+\end{DoxyParams}
+\hypertarget{classIA__Persona_abd04c4e981f7e1260784c1d7f7a3614f}{}\index{I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}!spara@{spara}}
+\index{spara@{spara}!I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}}
+\subsubsection[{spara}]{\setlength{\rightskip}{0pt plus 5cm}I\+A\+\_\+\+Persona\+::spara (
+\begin{DoxyParamCaption}
+\item[{{\bf Controller} $\ast$}]{controller, }
+\item[{char}]{direction, }
+\item[{char}]{stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]}, }
+\item[{{\bf coordinate}}]{coo\+\_\+stanza, }
+\item[{{\bf Persona} $\ast$}]{persone\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{num\+\_\+persone}
+\end{DoxyParamCaption}
+)}\label{classIA__Persona_abd04c4e981f7e1260784c1d7f7a3614f}
+
+
+effettua l\textquotesingle{}avazamento sulla stanza della persona 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & puntatore all\textquotesingle{}instanza di tipo \hyperlink{structController}{Controller} per l\textquotesingle{}insieme di tutti i comandi utente \\
+\hline
+{\em direction} & direzione in cui la persona deve andare definito dal controller \\
+\hline
+{\em stanza\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}} & matrice della stanza \\
+\hline
+{\em coo\+\_\+stanza} & coordinate della stanza sullo schermo \\
+\hline
+{\em persone\mbox{[}$\,$\mbox{]}} & vettore di tutte le persone presenti nella stanza \\
+\hline
+{\em num\+\_\+persone} & numero di persone presenti nella stanza \\
+\hline
+\end{DoxyParams}
+\hypertarget{classIA__Persona_ab8820ce00b02a098bf917e53bf297051}{}\index{I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}!write\+\_\+object@{write\+\_\+object}}
+\index{write\+\_\+object@{write\+\_\+object}!I\+A\+\_\+\+Persona@{I\+A\+\_\+\+Persona}}
+\subsubsection[{write\+\_\+object}]{\setlength{\rightskip}{0pt plus 5cm}I\+A\+\_\+\+Persona\+::write\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{char}]{stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]}, }
+\item[{{\bf Oggetto\+\_\+pos} $\ast$$\ast$}]{raccogliere, }
+\item[{int}]{num\+\_\+oggetti}
+\end{DoxyParamCaption}
+)}\label{classIA__Persona_ab8820ce00b02a098bf917e53bf297051}
+
+
+stampa sulla matrice della stanza tutti gli oggetti raccoglibili 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stanza\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}} & matrice della stanza \\
+\hline
+{\em raccogliere} & vettore di oggetti che si possono raccogliere \\
+\hline
+{\em num\+\_\+oggetti} & numero di oggetti che si possono raccogliere \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IA__Persona_8hpp}{I\+A\+\_\+\+Persona.\+hpp}\item 
+I\+A\+\_\+\+Persona.\+cpp\end{DoxyCompactItemize}

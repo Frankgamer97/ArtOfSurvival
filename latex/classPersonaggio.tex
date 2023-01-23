@@ -1,0 +1,120 @@
+\hypertarget{classPersonaggio}{}\section{Personaggio Class Reference}
+\label{classPersonaggio}\index{Personaggio@{Personaggio}}
+
+
+Filgia di \hyperlink{classIA__Persona}{I\+A\+\_\+\+Persona}, definisce un metodo per la gestione automatica di aiutanti e nemici.  
+
+
+
+
+{\ttfamily \#include $<$Personaggio.\+hpp$>$}
+
+
+
+Inheritance diagram for Personaggio\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPersonaggio__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Personaggio\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPersonaggio__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPersonaggio_ac7577ef8db7274dcb71d91e4572784d2}{Personaggio} (char Nome\mbox{[}50\mbox{]}, char Tipo\mbox{[}50\mbox{]}, char \hyperlink{classPersona_a1fff44e46be477b79413387307b0aaff}{carattere}, int \hyperlink{classPersona_a1e784d3a56cddd6ba8e81387df1efc7b}{vita})
+\begin{DoxyCompactList}\small\item\em Costruttore. \end{DoxyCompactList}\item 
+void \hyperlink{classPersonaggio_adc6035b95bffaec15a0c879bbc773af6}{Auto\+Action} (\hyperlink{structController}{Controller} $\ast$\hyperlink{structcontroller}{controller}, char stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]}, \hyperlink{structcoordinate}{coordinate} coo\+\_\+stanza, \hyperlink{classPersona}{Persona} $\ast$personaggi\mbox{[}$\,$\mbox{]}, int num\+\_\+personaggi, \hyperlink{structOggetto__pos}{Oggetto\+\_\+pos} $\ast$$\ast$oggetti, int num\+\_\+oggetti, int $\ast$total\+\_\+time\+\_\+machine\+\_\+part\+\_\+catched, int local\+\_\+time\+\_\+machine\+\_\+part, \hyperlink{structTime__Machine}{Time\+\_\+\+Machine} $\ast$$\ast$time\+\_\+machine\+\_\+coo)
+\begin{DoxyCompactList}\small\item\em permette la gestione automatica del personaggio in questione \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Filgia di \hyperlink{classIA__Persona}{I\+A\+\_\+\+Persona}, definisce un metodo per la gestione automatica di aiutanti e nemici. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPersonaggio_ac7577ef8db7274dcb71d91e4572784d2}{}\index{Personaggio@{Personaggio}!Personaggio@{Personaggio}}
+\index{Personaggio@{Personaggio}!Personaggio@{Personaggio}}
+\subsubsection[{Personaggio}]{\setlength{\rightskip}{0pt plus 5cm}Personaggio\+::\+Personaggio (
+\begin{DoxyParamCaption}
+\item[{char}]{Nome\mbox{[}50\mbox{]}, }
+\item[{char}]{Tipo\mbox{[}50\mbox{]}, }
+\item[{char}]{carattere, }
+\item[{int}]{vita}
+\end{DoxyParamCaption}
+)}\label{classPersonaggio_ac7577ef8db7274dcb71d91e4572784d2}
+
+
+Costruttore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nome} & nome della persona \\
+\hline
+{\em Tipo} & tipo della persona \\
+\hline
+{\em carattere} & carattere stampato a video della persona \\
+\hline
+{\em vita} & unità di vita della persona \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPersonaggio_adc6035b95bffaec15a0c879bbc773af6}{}\index{Personaggio@{Personaggio}!Auto\+Action@{Auto\+Action}}
+\index{Auto\+Action@{Auto\+Action}!Personaggio@{Personaggio}}
+\subsubsection[{Auto\+Action}]{\setlength{\rightskip}{0pt plus 5cm}Personaggio\+::\+Auto\+Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Controller} $\ast$}]{controller, }
+\item[{char}]{stanza\mbox{[}25\mbox{]}\mbox{[}91\mbox{]}, }
+\item[{{\bf coordinate}}]{coo\+\_\+stanza, }
+\item[{{\bf Persona} $\ast$}]{personaggi\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{num\+\_\+personaggi, }
+\item[{{\bf Oggetto\+\_\+pos} $\ast$$\ast$}]{oggetti, }
+\item[{int}]{num\+\_\+oggetti, }
+\item[{int $\ast$}]{total\+\_\+time\+\_\+machine\+\_\+part\+\_\+catched, }
+\item[{int}]{local\+\_\+time\+\_\+machine\+\_\+part, }
+\item[{{\bf Time\+\_\+\+Machine} $\ast$$\ast$}]{time\+\_\+machine\+\_\+coo}
+\end{DoxyParamCaption}
+)}\label{classPersonaggio_adc6035b95bffaec15a0c879bbc773af6}
+
+
+permette la gestione automatica del personaggio in questione 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & struttura dati che rappresenta l\textquotesingle{}insieme dei comandi utente \\
+\hline
+{\em stanza} & matrice della stanza in cui è presente il giocatore \\
+\hline
+{\em coo\+\_\+stanza} & coordinate della stanza in questione sullo schermo \\
+\hline
+{\em personaggi} & vettore di tutte le persone (giocatore, aiutanti e nemici) nella stanza in questione \\
+\hline
+{\em num\+\_\+personaggi} & lunghezza del vettore personaggi \\
+\hline
+{\em oggetti} & vettore di tutti gli oggetti raccoglibili nella stanza in questione \\
+\hline
+{\em num\+\_\+oggetti} & lunghezza del vettore oggetti \\
+\hline
+{\em total\+\_\+time\+\_\+machine\+\_\+part\+\_\+catched} & numero di pezzi della macchina del tempo attualmente raccolti \\
+\hline
+{\em local\+\_\+time\+\_\+machine\+\_\+part} & numero di pezzi della macchina del tempo presenti nella stanza corrente \\
+\hline
+{\em time\+\_\+machine\+\_\+coo} & vettore di \hyperlink{structTime__Machine}{Time\+\_\+\+Machine} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Personaggio_8hpp}{Personaggio.\+hpp}\item 
+Personaggio.\+cpp\end{DoxyCompactItemize}

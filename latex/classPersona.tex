@@ -1,0 +1,335 @@
+\hypertarget{classPersona}{}\section{Persona Class Reference}
+\label{classPersona}\index{Persona@{Persona}}
+
+
+definisce le caratterische di una persona (che è la classe padre radice di tutte le sue derivate)  
+
+
+
+
+{\ttfamily \#include $<$Persona.\+hpp$>$}
+
+
+
+Inheritance diagram for Persona\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPersona__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPersona_a5e4c7859de8f9284666715dbc5614ccd}{Persona} (char \hyperlink{classPersona_a15d4ded972e8bdd3f02e89c6ccb71b73}{nome}\mbox{[}50\mbox{]}, char \hyperlink{classPersona_ae7069f0467a3b2f1d269c1a143b730eb}{tipo}\mbox{[}50\mbox{]}, int \hyperlink{classPersona_a1e784d3a56cddd6ba8e81387df1efc7b}{vita}, char \hyperlink{classPersona_a1fff44e46be477b79413387307b0aaff}{carattere})
+\begin{DoxyCompactList}\small\item\em Costruttore. \end{DoxyCompactList}\item 
+void \hyperlink{classPersona_a4bea4b34933c85e2eee8443cdba6a940}{get\+Nome} (char \hyperlink{classPersona_a15d4ded972e8bdd3f02e89c6ccb71b73}{nome}\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em ritorna il nome della persona \end{DoxyCompactList}\item 
+void \hyperlink{classPersona_a8edc79607b544d69427da678bffbef51}{get\+Tipo} (char \hyperlink{classPersona_ae7069f0467a3b2f1d269c1a143b730eb}{tipo}\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em ritorna il tipo della persona \end{DoxyCompactList}\item 
+\hypertarget{classPersona_a008f0bc840f0e3e1dd306832f798637b}{}char \hyperlink{classPersona_a008f0bc840f0e3e1dd306832f798637b}{get\+Carattere} ()\label{classPersona_a008f0bc840f0e3e1dd306832f798637b}
+
+\begin{DoxyCompactList}\small\item\em ritorna il carattere della persona \end{DoxyCompactList}\item 
+void \hyperlink{classPersona_a9fcee7f1342f27a4c34d8e8275f4ba24}{set\+Carattere} (char \hyperlink{classPersona_a1fff44e46be477b79413387307b0aaff}{carattere})
+\begin{DoxyCompactList}\small\item\em Modifica il carattere della persona. \end{DoxyCompactList}\item 
+\hypertarget{classPersona_aa28e4ec15979f7a01f71e1c1888e5116}{}bool \hyperlink{classPersona_aa28e4ec15979f7a01f71e1c1888e5116}{get\+Scudo} ()\label{classPersona_aa28e4ec15979f7a01f71e1c1888e5116}
+
+\begin{DoxyCompactList}\small\item\em ritorna lo stato dello scudo \end{DoxyCompactList}\item 
+void \hyperlink{classPersona_a20449ddc606a872a8905c94fe0ed716a}{set\+Scudo} (bool \hyperlink{classPersona_a1af99e040deeb7015e7e99bb2a5128f4}{scudo})
+\begin{DoxyCompactList}\small\item\em Modifica lo stato dello scudo. \end{DoxyCompactList}\item 
+void \hyperlink{classPersona_aeca07343f896b49854a6b3eb7acadf99}{add\+Vita} (int \hyperlink{classPersona_a1e784d3a56cddd6ba8e81387df1efc7b}{vita})
+\begin{DoxyCompactList}\small\item\em Aggiunge unità di vita al persona. \end{DoxyCompactList}\item 
+void \hyperlink{classPersona_af759e5da9d0972da4a74ce6a56e271aa}{sub\+Vita} (int \hyperlink{classPersona_a1e784d3a56cddd6ba8e81387df1efc7b}{vita})
+\begin{DoxyCompactList}\small\item\em Toglie unità di vita al persona. \end{DoxyCompactList}\item 
+\hypertarget{classPersona_a7f8f0aa7052c06e40ddbbdd4f62f3c4d}{}int \hyperlink{classPersona_a7f8f0aa7052c06e40ddbbdd4f62f3c4d}{get\+Vita} ()\label{classPersona_a7f8f0aa7052c06e40ddbbdd4f62f3c4d}
+
+\begin{DoxyCompactList}\small\item\em Ritorna le unità di vita della persona. \end{DoxyCompactList}\item 
+\hypertarget{classPersona_a537b7f6ab867ce01ab850c378bf30cf4}{}\hyperlink{classArma}{Arma} $\ast$ \hyperlink{classPersona_a537b7f6ab867ce01ab850c378bf30cf4}{get\+Arma} ()\label{classPersona_a537b7f6ab867ce01ab850c378bf30cf4}
+
+\begin{DoxyCompactList}\small\item\em ritona il puntatore all\textquotesingle{}arma corrente della persona \end{DoxyCompactList}\item 
+void \hyperlink{classPersona_a60a40a075ceb82c3a5586c589478abe4}{set\+Arma} (\hyperlink{classArma}{Arma} $\ast$arma\+\_\+corrente)
+\begin{DoxyCompactList}\small\item\em Modifica l\textquotesingle{}arma corrente del personaggio. \end{DoxyCompactList}\item 
+bool \hyperlink{classPersona_a9d2d465914d3fc2e4594cebc4fc3cfb8}{add\+Oggetto} (\hyperlink{structOggetto}{Oggetto} o)
+\begin{DoxyCompactList}\small\item\em Aggiunge un\textquotesingle{}oggetto allo zaino. \end{DoxyCompactList}\item 
+bool \hyperlink{classPersona_a295caef7835d4a9f631fc5bb21c57ad3}{compare\+Oggetto} (\hyperlink{structOggetto}{Oggetto} o, int i)
+\begin{DoxyCompactList}\small\item\em Confronta l\textquotesingle{}oggetto o con quello presente alla posizione i-\/esima dello zaino. \end{DoxyCompactList}\item 
+void \hyperlink{classPersona_a8419f8c494f1b626dcde55f1f0bb1f2e}{remove\+Oggetto} (\hyperlink{structOggetto}{Oggetto} o)
+\begin{DoxyCompactList}\small\item\em Rivuove (se è possibile) l\textquotesingle{}oggetto o dallo zaino. \end{DoxyCompactList}\item 
+int \hyperlink{classPersona_a8ebd8537b8a1877799829c3d7a3242d3}{get\+Index\+Oggetto} (\hyperlink{structOggetto}{Oggetto} o)
+\begin{DoxyCompactList}\small\item\em ritorna l\textquotesingle{}indice del vettore a cui corrisponde l\textquotesingle{}oggetto o ($<$0 altrimenti) \end{DoxyCompactList}\item 
+void \hyperlink{classPersona_adce1ee94dc798acffb6a2bbd72c70226}{get\+Zaino} (\hyperlink{structOggetto}{p\+\_\+oggetto} new\+Zaino\mbox{[}50\mbox{]})
+\begin{DoxyCompactList}\small\item\em ritorna l\textquotesingle{}intero zaino della persona \end{DoxyCompactList}\item 
+void \hyperlink{classPersona_a595fabb934aad33a42b33f4d2d2baf91}{set\+Coordinate} (\hyperlink{structcoordinate}{coordinate} coo)
+\begin{DoxyCompactList}\small\item\em modifca le coordinate della persona riferite alla stanza \end{DoxyCompactList}\item 
+\hypertarget{classPersona_a37f9b4d937362f9d12dc90c56004315c}{}\hyperlink{structcoordinate}{coordinate} \hyperlink{classPersona_a37f9b4d937362f9d12dc90c56004315c}{get\+Coordinate} ()\label{classPersona_a37f9b4d937362f9d12dc90c56004315c}
+
+\begin{DoxyCompactList}\small\item\em Ritorna le coordinate della persona riferite alla stanza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPersona_a15d4ded972e8bdd3f02e89c6ccb71b73}{}char \hyperlink{classPersona_a15d4ded972e8bdd3f02e89c6ccb71b73}{nome} \mbox{[}50\mbox{]}\label{classPersona_a15d4ded972e8bdd3f02e89c6ccb71b73}
+
+\begin{DoxyCompactList}\small\item\em nome della persona \end{DoxyCompactList}\item 
+\hypertarget{classPersona_ae7069f0467a3b2f1d269c1a143b730eb}{}char \hyperlink{classPersona_ae7069f0467a3b2f1d269c1a143b730eb}{tipo} \mbox{[}50\mbox{]}\label{classPersona_ae7069f0467a3b2f1d269c1a143b730eb}
+
+\begin{DoxyCompactList}\small\item\em tipo della persona (Eroe,Aiutante,Nemico) \end{DoxyCompactList}\item 
+\hypertarget{classPersona_a1e784d3a56cddd6ba8e81387df1efc7b}{}int \hyperlink{classPersona_a1e784d3a56cddd6ba8e81387df1efc7b}{vita}\label{classPersona_a1e784d3a56cddd6ba8e81387df1efc7b}
+
+\begin{DoxyCompactList}\small\item\em unita di vita della persona \end{DoxyCompactList}\item 
+\hypertarget{classPersona_a1fff44e46be477b79413387307b0aaff}{}char \hyperlink{classPersona_a1fff44e46be477b79413387307b0aaff}{carattere}\label{classPersona_a1fff44e46be477b79413387307b0aaff}
+
+\begin{DoxyCompactList}\small\item\em carattere della personache viene stampato a video \end{DoxyCompactList}\item 
+\hypertarget{classPersona_a1af99e040deeb7015e7e99bb2a5128f4}{}bool \hyperlink{classPersona_a1af99e040deeb7015e7e99bb2a5128f4}{scudo}\label{classPersona_a1af99e040deeb7015e7e99bb2a5128f4}
+
+\begin{DoxyCompactList}\small\item\em flag che indica se lo scudo della persona è atttivo o meno \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+definisce le caratterische di una persona (che è la classe padre radice di tutte le sue derivate) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPersona_a5e4c7859de8f9284666715dbc5614ccd}{}\index{Persona@{Persona}!Persona@{Persona}}
+\index{Persona@{Persona}!Persona@{Persona}}
+\subsubsection[{Persona}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::\+Persona (
+\begin{DoxyParamCaption}
+\item[{char}]{nome\mbox{[}50\mbox{]}, }
+\item[{char}]{tipo\mbox{[}50\mbox{]}, }
+\item[{int}]{vita, }
+\item[{char}]{carattere}
+\end{DoxyParamCaption}
+)}\label{classPersona_a5e4c7859de8f9284666715dbc5614ccd}
+
+
+Costruttore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & nome della persona \\
+\hline
+{\em tipo} & tipo della persona \\
+\hline
+{\em vita} & unità di vita della persona \\
+\hline
+{\em carattere} & carattere stampato a video della persona \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPersona_a9d2d465914d3fc2e4594cebc4fc3cfb8}{}\index{Persona@{Persona}!add\+Oggetto@{add\+Oggetto}}
+\index{add\+Oggetto@{add\+Oggetto}!Persona@{Persona}}
+\subsubsection[{add\+Oggetto}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::add\+Oggetto (
+\begin{DoxyParamCaption}
+\item[{{\bf Oggetto}}]{o}
+\end{DoxyParamCaption}
+)}\label{classPersona_a9d2d465914d3fc2e4594cebc4fc3cfb8}
+
+
+Aggiunge un\textquotesingle{}oggetto allo zaino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & nuovo oggetto da aggiungere. Ritorna true se ha aggiunto o, false altrimenti \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_aeca07343f896b49854a6b3eb7acadf99}{}\index{Persona@{Persona}!add\+Vita@{add\+Vita}}
+\index{add\+Vita@{add\+Vita}!Persona@{Persona}}
+\subsubsection[{add\+Vita}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::add\+Vita (
+\begin{DoxyParamCaption}
+\item[{int}]{vita}
+\end{DoxyParamCaption}
+)}\label{classPersona_aeca07343f896b49854a6b3eb7acadf99}
+
+
+Aggiunge unità di vita al persona. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vita} & quantità da aggiungere \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_a295caef7835d4a9f631fc5bb21c57ad3}{}\index{Persona@{Persona}!compare\+Oggetto@{compare\+Oggetto}}
+\index{compare\+Oggetto@{compare\+Oggetto}!Persona@{Persona}}
+\subsubsection[{compare\+Oggetto}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::compare\+Oggetto (
+\begin{DoxyParamCaption}
+\item[{{\bf Oggetto}}]{o, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{classPersona_a295caef7835d4a9f631fc5bb21c57ad3}
+
+
+Confronta l\textquotesingle{}oggetto o con quello presente alla posizione i-\/esima dello zaino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & oggetto da confrontare \\
+\hline
+{\em i} & indice del confronto \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_a8ebd8537b8a1877799829c3d7a3242d3}{}\index{Persona@{Persona}!get\+Index\+Oggetto@{get\+Index\+Oggetto}}
+\index{get\+Index\+Oggetto@{get\+Index\+Oggetto}!Persona@{Persona}}
+\subsubsection[{get\+Index\+Oggetto}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::get\+Index\+Oggetto (
+\begin{DoxyParamCaption}
+\item[{{\bf Oggetto}}]{o}
+\end{DoxyParamCaption}
+)}\label{classPersona_a8ebd8537b8a1877799829c3d7a3242d3}
+
+
+ritorna l\textquotesingle{}indice del vettore a cui corrisponde l\textquotesingle{}oggetto o ($<$0 altrimenti) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & oggetto per cui si vuole conoscere l\textquotesingle{}indice \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_a4bea4b34933c85e2eee8443cdba6a940}{}\index{Persona@{Persona}!get\+Nome@{get\+Nome}}
+\index{get\+Nome@{get\+Nome}!Persona@{Persona}}
+\subsubsection[{get\+Nome}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::get\+Nome (
+\begin{DoxyParamCaption}
+\item[{char}]{nome\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{classPersona_a4bea4b34933c85e2eee8443cdba6a940}
+
+
+ritorna il nome della persona 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & vettore che conterrà il nome \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_a8edc79607b544d69427da678bffbef51}{}\index{Persona@{Persona}!get\+Tipo@{get\+Tipo}}
+\index{get\+Tipo@{get\+Tipo}!Persona@{Persona}}
+\subsubsection[{get\+Tipo}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::get\+Tipo (
+\begin{DoxyParamCaption}
+\item[{char}]{tipo\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{classPersona_a8edc79607b544d69427da678bffbef51}
+
+
+ritorna il tipo della persona 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tipo} & vettore che conterrà il tipo \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_adce1ee94dc798acffb6a2bbd72c70226}{}\index{Persona@{Persona}!get\+Zaino@{get\+Zaino}}
+\index{get\+Zaino@{get\+Zaino}!Persona@{Persona}}
+\subsubsection[{get\+Zaino}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::get\+Zaino (
+\begin{DoxyParamCaption}
+\item[{{\bf p\+\_\+oggetto}}]{new\+Zaino\mbox{[}50\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{classPersona_adce1ee94dc798acffb6a2bbd72c70226}
+
+
+ritorna l\textquotesingle{}intero zaino della persona 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Zaino} & vettore dello zaino ritornato per indirizzo \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_a8419f8c494f1b626dcde55f1f0bb1f2e}{}\index{Persona@{Persona}!remove\+Oggetto@{remove\+Oggetto}}
+\index{remove\+Oggetto@{remove\+Oggetto}!Persona@{Persona}}
+\subsubsection[{remove\+Oggetto}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::remove\+Oggetto (
+\begin{DoxyParamCaption}
+\item[{{\bf Oggetto}}]{o}
+\end{DoxyParamCaption}
+)}\label{classPersona_a8419f8c494f1b626dcde55f1f0bb1f2e}
+
+
+Rivuove (se è possibile) l\textquotesingle{}oggetto o dallo zaino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & oggetto da rimuovere \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_a60a40a075ceb82c3a5586c589478abe4}{}\index{Persona@{Persona}!set\+Arma@{set\+Arma}}
+\index{set\+Arma@{set\+Arma}!Persona@{Persona}}
+\subsubsection[{set\+Arma}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::set\+Arma (
+\begin{DoxyParamCaption}
+\item[{{\bf Arma} $\ast$}]{arma\+\_\+corrente}
+\end{DoxyParamCaption}
+)}\label{classPersona_a60a40a075ceb82c3a5586c589478abe4}
+
+
+Modifica l\textquotesingle{}arma corrente del personaggio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arma\+\_\+corrente} & puntatore all\textquotesingle{}nuova arma corrente \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_a9fcee7f1342f27a4c34d8e8275f4ba24}{}\index{Persona@{Persona}!set\+Carattere@{set\+Carattere}}
+\index{set\+Carattere@{set\+Carattere}!Persona@{Persona}}
+\subsubsection[{set\+Carattere}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::set\+Carattere (
+\begin{DoxyParamCaption}
+\item[{char}]{carattere}
+\end{DoxyParamCaption}
+)}\label{classPersona_a9fcee7f1342f27a4c34d8e8275f4ba24}
+
+
+Modifica il carattere della persona. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em carattere} & nuovo carattere dell apersona \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_a595fabb934aad33a42b33f4d2d2baf91}{}\index{Persona@{Persona}!set\+Coordinate@{set\+Coordinate}}
+\index{set\+Coordinate@{set\+Coordinate}!Persona@{Persona}}
+\subsubsection[{set\+Coordinate}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::set\+Coordinate (
+\begin{DoxyParamCaption}
+\item[{{\bf coordinate}}]{coo}
+\end{DoxyParamCaption}
+)}\label{classPersona_a595fabb934aad33a42b33f4d2d2baf91}
+
+
+modifca le coordinate della persona riferite alla stanza 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coo} & nuove coordinate della persona \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_a20449ddc606a872a8905c94fe0ed716a}{}\index{Persona@{Persona}!set\+Scudo@{set\+Scudo}}
+\index{set\+Scudo@{set\+Scudo}!Persona@{Persona}}
+\subsubsection[{set\+Scudo}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::set\+Scudo (
+\begin{DoxyParamCaption}
+\item[{bool}]{scudo}
+\end{DoxyParamCaption}
+)}\label{classPersona_a20449ddc606a872a8905c94fe0ed716a}
+
+
+Modifica lo stato dello scudo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scudo} & nuovo stato dello scudo \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPersona_af759e5da9d0972da4a74ce6a56e271aa}{}\index{Persona@{Persona}!sub\+Vita@{sub\+Vita}}
+\index{sub\+Vita@{sub\+Vita}!Persona@{Persona}}
+\subsubsection[{sub\+Vita}]{\setlength{\rightskip}{0pt plus 5cm}Persona\+::sub\+Vita (
+\begin{DoxyParamCaption}
+\item[{int}]{vita}
+\end{DoxyParamCaption}
+)}\label{classPersona_af759e5da9d0972da4a74ce6a56e271aa}
+
+
+Toglie unità di vita al persona. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vita} & quantità da togliere \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Persona_8hpp}{Persona.\+hpp}\item 
+Persona.\+cpp\end{DoxyCompactItemize}
